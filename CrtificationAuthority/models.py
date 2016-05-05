@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
-
+from django.utils.translation import ugettext_lazy as _
 from django.db import models
+from UserProfile.models import MyUser
 
 # Create your models here.
 
@@ -14,3 +15,9 @@ class Contacts(models.Model):
     state = models.CharField(max_length=255,)
     country = models.CharField(max_length=2,)
     email = models.EmailField()
+
+
+class CrtFile(models.Model):
+    owner = models.ManyToManyField(MyUser)
+    crt_file = models.FileField()
+    day_rev = models.IntegerField()
