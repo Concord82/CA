@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-06 07:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: UserProfile/models.py:17
+msgid "Users must have an login"
+msgstr ""
+
+#: UserProfile/models.py:45
+msgid "user login"
+msgstr ""
+
+#: UserProfile/models.py:50
+msgid "First Name User"
+msgstr ""
+
+#: UserProfile/models.py:54
+msgid "Midle Name User"
+msgstr ""
+
+#: UserProfile/models.py:58
+msgid "Last Name User"
+msgstr ""
+
+#: UserProfile/models.py:62
+msgid "email address"
+msgstr ""
+
+#: UserProfile/models.py:67
+msgid "Organizational Unit Name (eg, section)"
+msgstr ""
+
+#: UserProfile/models.py:71
+msgid "Organization Name (eg, company)"
+msgstr ""
+
+#: UserProfile/models.py:73
+msgid "Consultant ltd."
+msgstr ""
+
+#: UserProfile/models.py:76
+msgid "Locality Name (eg, city)"
+msgstr ""
+
+#: UserProfile/models.py:78
+msgid "Tomsk city"
+msgstr ""
+
+#: UserProfile/models.py:81
+msgid "State or Province Name (full name)"
+msgstr ""
+
+#: UserProfile/models.py:83
+msgid "70 Tomsk region"
+msgstr ""
+
+#: UserProfile/models.py:90
+msgid "Russian"
+msgstr ""
+
+#: UserProfile/models.py:91
+msgid "GB Great Britain"
+msgstr ""
+
+#: UserProfile/models.py:92
+msgid "United States of America"
+msgstr ""
+
+#: UserProfile/models.py:99
+msgid "Country Name"
+msgstr ""
