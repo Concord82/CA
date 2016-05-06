@@ -19,5 +19,10 @@ from CertificationAuthority import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^CA/', include('CertificationAuthority.urls')),
+    url(r'^$', views.index, name='index'),
+    url(r'^login', views.login, name='login'),
+    url(r'^userpage/$', views.userpage, name='userpage'),
+    url(r'^userpage/(?P<username>\w{1,50})/$', view = views.userpage),
+
+   # url(r'^ca', include('CertificationAuthority.urls')),
 ]

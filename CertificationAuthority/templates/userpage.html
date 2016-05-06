@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="page-header">
+        <h1 align="right" >{{ userprofile.get_full_name }}</h1>
+    </div>
+    <table class="table" align="center" >
+        <tr>
+            <td colspan="2"> <a href="mailto:{{userprofile.email }}">{{ userprofile.email }}</a> </td>
+        </tr>
+        <tr>
+            <td>Отдел: {{ userprofile.departament }}</td><td>Организация: {{ userprofile.organisation }}</td>
+        </tr>
+        <tr>
+            <td>Город: {{ userprofile.city }}</td><td>Регион: {{ userprofile.state }}</td>
+        </tr>
+        <tr>
+            <td colspan="2">Страна: {{ userprofile.country }}</td>
+        </tr>
+    </table>
+{% endblock %}
