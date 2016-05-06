@@ -23,3 +23,11 @@ class CertList(models.Model):
         verbose_name=_('file_name'),
         max_length=255,
     )
+
+class sslTemplate(models.Model):
+    name = models.CharField(max_length=32, verbose_name=_('Template Name'),)
+    nsCertType = models.CharField(max_length=255, verbose_name=_('Cert Type'),)
+    nsComment  = models.CharField(max_length=255, verbose_name=_('Comment Cert'),)
+
+    cert_usage = models.CharField(max_length=1024, blank=True, null=True)
+    cert_usage_ext = models.CharField(max_length=1024, blank=True, null=True)

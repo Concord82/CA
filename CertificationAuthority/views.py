@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from django.shortcuts import render
 from django.utils.translation import ugettext as _
 from django.http import HttpResponseRedirect, HttpResponse, Http404
@@ -6,9 +7,8 @@ from django.contrib.auth import get_user_model
 
 User = get_user_model()
 
-
 from forms import AuthForm
-from UserProfile.models import MyUser
+
 # Create your views here.
 
 def index(request):
@@ -30,17 +30,15 @@ def login(request):
         form = AuthForm()
         return render(request, 'index.html', {'login_form': form })
 
+# Вывод страницы с пользовательским профилем.
 def userpage(request, username=None):
-    print username
+
     if username == None:
         username = request.user.get_username()
-
     try:
         userprofile = User.objects.get(login_name=username)
     except User.DoesNotExist:
         raise Http404
-
-
     return render(request, 'userpage.html', {'userprofile': userprofile})
 
 
